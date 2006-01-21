@@ -19,7 +19,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		webcactipluginroot /usr/share/cacti/plugins/%{namesrc}
 
 %description
-Plugin for Cacti.
+Plugin for Cacti - allows you to send graphs that you specify to users
+that you specify at a specified time. A simple wizard guides you
+through the whole process. Currently works, but lacks a little polish
+and some much needed options.
 
 %description -l pl
 Wtyczka do Cacti.
