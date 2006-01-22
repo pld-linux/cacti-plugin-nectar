@@ -11,7 +11,7 @@ Group:		Applications/WWW
 Source0:	http://download.cactiusers.org/downloads/%{namesrc}.tar.gz
 # Source0-md5:	775098a64f02a89569c239d57886d06b
 URL:		http://www.cactiusers.org/
-#BuildRequires:	rpm-perlprov
+BuildRequires:	rpm-perlprov
 Requires:	cacti
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -25,7 +25,10 @@ through the whole process. Currently works, but lacks a little polish
 and some much needed options.
 
 %description -l pl
-Wtyczka do Cacti.
+Wtyczka do Cacti pozwalaj±ca wysy³aæ okre¶lone wykresy do okre¶lonych
+u¿ytkowników o okre¶lonym czasie. Prosty wizard prowadzi przez ca³y
+proces konfiguracji. Aktualnie dzia³a, ale wymaga jeszcze dopracowania
+i dodania kilku najbardziej potrzebnych opcji.
 
 %prep
 %setup -q -n %{namesrc}
