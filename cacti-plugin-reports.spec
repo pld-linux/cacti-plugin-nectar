@@ -1,7 +1,7 @@
 %define		namesrc	reports
 %include	/usr/lib/rpm/macros.perl
 Summary:	Plugin for Cacti - Reports
-Summary(pl):	Wtyczka do Cacti - Reports
+Summary(pl.UTF-8):   Wtyczka do Cacti - Reports
 Name:		cacti-plugin-reports
 Version:	0.1b
 Release:	0.1
@@ -24,10 +24,10 @@ that you specify at a specified time. A simple wizard guides you
 through the whole process. Currently works, but lacks a little polish
 and some much needed options.
 
-%description -l pl
-Wtyczka do Cacti pozwalaj±ca wysy≥aÊ okre∂lone wykresy do okre∂lonych
-uøytkownikÛw o okre∂lonym czasie. Prosty wizard prowadzi przez ca≥y
-proces konfiguracji. Aktualnie dzia≥a, ale wymaga jeszcze dopracowania
+%description -l pl.UTF-8
+Wtyczka do Cacti pozwalajƒÖca wysy≈Çaƒá okre≈õlone wykresy do okre≈õlonych
+u≈ºytkownik√≥w o okre≈õlonym czasie. Prosty wizard prowadzi przez ca≈Çy
+proces konfiguracji. Aktualnie dzia≈Ça, ale wymaga jeszcze dopracowania
 i dodania kilku najbardziej potrzebnych opcji.
 
 %prep
