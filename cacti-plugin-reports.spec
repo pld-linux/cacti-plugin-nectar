@@ -1,7 +1,7 @@
 %define		namesrc	reports
 %include	/usr/lib/rpm/macros.perl
 Summary:	Plugin for Cacti - Reports
-Summary(pl.UTF-8):   Wtyczka do Cacti - Reports
+Summary(pl.UTF-8):	Wtyczka do Cacti - Reports
 Name:		cacti-plugin-reports
 Version:	0.1b
 Release:	0.1
