@@ -3,14 +3,13 @@
 Summary:	Plugin for Cacti - Reports
 Summary(pl.UTF-8):	Wtyczka do Cacti - Reports
 Name:		cacti-plugin-reports
-Version:	0.1b
+Version:	0.3a
 Release:	0.1
 License:	GPL v2
 Group:		Applications/WWW
-#!!!!problem with version in name
-Source0:	http://download.cactiusers.org/downloads/%{namesrc}.tar.gz
-# Source0-md5:	775098a64f02a89569c239d57886d06b
-URL:		http://www.cactiusers.org/
+Source0:	%{namesrc}-%{version}.zip
+# Source0-md5:	ccd09c76b80c2346d86a739ee1cc2794
+URL:		http://www.cactiusers.org/forums
 BuildRequires:	rpm-perlprov
 Requires:	cacti
 BuildArch:	noarch
@@ -45,4 +44,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc LICENSE README reports.txt
 %{webcactipluginroot}
