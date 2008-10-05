@@ -1,4 +1,4 @@
-%define		namesrc	reports
+%define		plugin	reports
 %include	/usr/lib/rpm/macros.perl
 Summary:	Plugin for Cacti - Reports
 Summary(pl.UTF-8):	Wtyczka do Cacti - Reports
@@ -7,7 +7,7 @@ Version:	0.3a
 Release:	0.1
 License:	GPL v2
 Group:		Applications/WWW
-Source0:	%{namesrc}-%{version}.zip
+Source0:	%{plugin}-%{version}.zip
 # Source0-md5:	ccd09c76b80c2346d86a739ee1cc2794
 URL:		http://www.cactiusers.org/forums
 BuildRequires:	rpm-perlprov
@@ -15,7 +15,8 @@ Requires:	cacti
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		webcactipluginroot /usr/share/cacti/plugins/%{namesrc}
+%define		cactidir		/usr/share/cacti
+%define		plugindir		%{cactidir}/plugins/%{plugin}
 
 %description
 Plugin for Cacti - allows you to send graphs that you specify to users
@@ -30,14 +31,14 @@ proces konfiguracji. Aktualnie działa, ale wymaga jeszcze dopracowania
 i dodania kilku najbardziej potrzebnych opcji.
 
 %prep
-%setup -q -n %{namesrc}
+%setup -q -n %{plugin}
 
 %build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{webcactipluginroot}
-cp -a * $RPM_BUILD_ROOT%{webcactipluginroot}
+install -d $RPM_BUILD_ROOT%{plugindir}
+cp -a . $RPM_BUILD_ROOT%{plugindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -45,4 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc LICENSE README reports.txt
-%{webcactipluginroot}
+%{plugindir}
