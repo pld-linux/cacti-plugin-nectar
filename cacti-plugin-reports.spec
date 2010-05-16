@@ -11,6 +11,7 @@ Source0:	%{plugin}-%{version}.zip
 # Source0-md5:	ccd09c76b80c2346d86a739ee1cc2794
 URL:		http://www.cactiusers.org/forums
 BuildRequires:	rpm-perlprov
+BuildRequires:	unzip
 Requires:	cacti
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
