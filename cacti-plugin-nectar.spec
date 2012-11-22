@@ -14,12 +14,12 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.554
 Requires:	cacti
 Requires:	cacti(pia) >= 2.9
-Requires:	php-common >= 4:%{php_min_version}
-Requires:	php-date
-Requires:	php-gd
-Requires:	php-mysql
-Requires:	php-pcre
-Requires:	php-session
+Requires:	php(core) >= %{php_min_version}
+Requires:	php(date)
+Requires:	php(gd)
+Requires:	php(mysql)
+Requires:	php(pcre)
+Requires:	php(session)
 Obsoletes:	cacti-plugin-reports
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
