@@ -1,6 +1,5 @@
 %define		plugin	nectar
 %define		php_min_version 5.2.0
-%include	/usr/lib/rpm/macros.php
 Summary:	Plugin for Cacti - Send Graphs and Text to given mail address(es)
 Name:		cacti-plugin-%{plugin}
 Version:	0.35a
